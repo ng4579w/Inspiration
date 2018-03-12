@@ -1,0 +1,58 @@
+.animationText{
+    animation:fadeAndscale 3s ease-in;
+    transform-origin: left bottom;
+}
+.animationText1{
+    animation: tScale 3.5s ease;
+    transform-origin: center top;
+}
+@media screen and (min-width: 600px){
+    
+    .animationText{
+       /*float: left;*/
+       margin-top: 30px; 
+    }
+    .animationText1{
+       /*width: 47%;*/
+       float: left;
+    }
+    
+    
+@keyframes fadeAndscale{
+    0%{
+        opacity:0;
+        transform: scale3d(0, 0, 0);
+    }
+    94%{
+        opacity:0;
+        transform: scale3d(0, 0, 0);
+    }
+    95%{
+        transform: scale3d(.75, .75, 1);
+    }
+    100%{
+        opacity:1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes tScale{
+    0%{
+        opacity:0;
+        transform: scale3d(0, 0, 0);
+    }
+    94%{
+        opacity:0;
+        transform: scale3d(0, 0, 0);
+    }
+    95%{
+        transform: scale3d(.75, .75, 1);
+    }
+    100%{
+        opacity:1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+}
+.td_bg{
+    background-color: #419133;
+}
